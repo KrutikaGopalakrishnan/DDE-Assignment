@@ -12,7 +12,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 @st.cache_data
 def load_company_data():
     try:
-        df = pd.read_excel('croatia + company descriptions.xlsx')
+        df = pd.read_excel('croatian_companies_descriptions_full.xlsx')
         cols = ['Company name Latin alphabet', 'Company Description', 'Region in country clean']
         for year in range(2019, 2024):
             colname = f'HighGrowthFirm {year}'
